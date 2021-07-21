@@ -15,6 +15,14 @@ p {
   line-height: 2rem;
 }
 
+.creator {
+  max-width: 3rem;
+}
+
+.credit {
+  text-shadow: 2px 2px 2px #757575;
+}
+
 .sidenav-trigger {
   color: #26a69a;
 }
