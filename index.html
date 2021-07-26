@@ -31,7 +31,7 @@
           <h5 class="credit red-text text-darken-4">MIT</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <a href="#file-selection" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
         </div>
         <br><br>
 
@@ -89,11 +89,16 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Select a File</h4>
-          <p class="left-align light">NOTE TO SELF: DEJON - UPDATE THIS</p>
+          <h4>Select a File</h4> <a id="file-selection"> </a>
+          <div class="file-upload">
+            <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple>
+            <button class="file-upload__button" type="button">Choose File</button>
+            <span class="file-upload__label"></span>
+          </div>
         </div>
       </div>
-
+      <div class="results col s12 center" id="result"> 
+      </div>
     </div>
   </div>
 
