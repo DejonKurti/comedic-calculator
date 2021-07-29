@@ -74,6 +74,29 @@ p {
   white-space: nowrap;
 }
 
+.table-row {
+  height: 350px;
+  width: 80%;
+}
+
+.charts-css {
+  height: 300px;
+}
+
+@media (min-width: 600px) {
+  #results-chart .bar {
+    height: 400px;
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #results-chart .bar {
+    height: 500px;
+    max-width: 1000px;
+  }
+}
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -89,6 +112,7 @@ p {
     top: 0;
   }
 }
+
 
 .icon-block {
   padding: 0 15px;

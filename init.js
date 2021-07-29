@@ -19,7 +19,7 @@ Array.prototype.forEach.call(
     console.log(result)
     const defaultLabelText = "No file selected";
     const defaultResultText = "No results";
-    const newResult = "You are in the 92nd percentile";
+    const newResult = "You are in the 91st percentile";
 
     // Set default text for label
     label.textContent = defaultLabelText;
