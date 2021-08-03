@@ -1,11 +1,3 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -113,7 +105,6 @@ p {
   }
 }
 
-
 .icon-block {
   padding: 0 15px;
 }
@@ -123,4 +114,21 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+#my-chart {
+  padding-top: 15%;
+}
+
+#my-chart.line {
+  height: 275px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.primary-axis {
+  text-align: center;
+  text-emphasis: 50px;
+  font-weight: bold;
+  font-size: 15px;
 }
