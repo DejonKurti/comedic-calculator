@@ -132,3 +132,50 @@ footer.page-footer {
   font-weight: bold;
   font-size: 15px;
 }
+#bars {
+  --secondary-axes-color: rgba(0, 0, 0, 1);
+  --secondary-axes-style: solid;
+  --secondary-axes-width: 1px;
+  padding-right: 10%;
+}
+
+#bars tbody td {
+  transform-origin: bottom;
+  animation: revealing-bars 8s linear 1;
+}
+@keyframes revealing-bars {
+  0%  { transform: scaleY( 0 ); }
+  15% { transform: scaleY( 1 ); }
+}
+
+#my-chart tbody td {
+  transform-origin: left;
+  animation: revealing-lines 8s linear 1;
+  
+}
+@keyframes revealing-lines {
+  0%  { transform: scaleY( 0 ); }
+  15% { transform: scaleY( 1 ); }
+}
+
+#entire-bars {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 130px 1fr;
+  grid-template-rows: 297px 50px;
+  grid-template-areas:
+  "secondary-axis chart"
+  ".         primary-axis";;
+}
+#entire-bars > table {
+  grid-area: chart;
+}
+#entire-bars > .primary-axis {
+  grid-area: primary-axis;
+}
+#entire-bars > .secondary-axis {
+  grid-area: secondary-axis;
+  writing-mode: tb-rl;
+  transform: rotateZ(180deg);
+}

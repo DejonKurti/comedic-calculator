@@ -67,10 +67,20 @@
             <h5 class="center">The MIT "Funny Algorithm" has Analyzed Over 80 Million Videos</h5>
           </div>
         </div>
-      </div>
-      <h5>Distribution of Video Clips Analyzed</h5>
-      <img src="bell_curve_.png">
+        </div>
+        
+        <div class="divider"></div>
 
+        <div class="row">
+          <div class="col s12 center">
+            <h5>Distribution of Video Clips Analyzed</h5>
+            <h5>*insert Basima's notes here* 
+              *exact numbers stored in database
+            *interactive webpage provides qualitative depictions for users to assess their performance
+            </h5>
+            <img src="bell_curve_.png">
+          </div>
+        </div>
 
     </div>
   </div>
@@ -91,58 +101,57 @@
     <div class="section">
       <div class="row">
         <div class="col s12 center">
-          <h5>*insert Basima's notes here* 
-            *exact numbers stored in database
-          *interactive webpage provides qualitative depictions for users to assess their performance
-          </h5>
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Select a File</h4> <a id="file-selection"> </a>
           <div class="file-upload">
             <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple>
             <button class="file-upload__button" type="button">Choose File</button>
-            <span class="file-upload__label"></span>
+            <span class="file-upload__label"></span>  
           </div>
         </div>
       </div>
-      <div class="results col s12 center" id="result"> 
+      <div class="section results col s12 center" id="result"> 
       </div>
+      <div class="divider"></div>
     </div>
   </div>
 
-  <div class="table-wrap">
+  <div class="section table-wrap">
     <div class="table-div">
       <div class="row table-row">
-        <div class="col s6 table-row">
-          <table class="charts-css column multiple data-spacing-20 show-labels">
+        <div class="col s6 table-row" id="entire-bars">
+          <table class="charts-css column multiple data-spacing-20 show-labels show-primary-axis show-10-secondary-axes" id="bars">
           
             <tbody>
               <tr>
                 <th scope="row"> Delivery </th>
-                <td style="--size: calc(8.5 / 12); --color: rgba(240,50,50,0.75);"> </td>
+                <td style="--size: calc(9 / 10); --color: rgba(240,50,50,0.75);"> <span class="data"> 90 </span> </td>
               </tr>
               <tr>
                 <th scope="row"> Originality </th>
-                <td style="--size: calc(11 / 12); --color: rgba(100,210,80,0.75);"> </td>
+                <td style="--size: calc(9 / 10); --color: rgba(100,210,80,0.75);"> <span class="data"> 90 </span> </td>
               </tr>
               <tr>
                 <th scope="row"> Style </th>
-                <td style="--size: calc(10.5 / 12); --color: rgba(90,165,255,0.75);"> </td>
+                <td style="--size: calc(9.5 / 10); --color: rgba(90,165,255,0.75);"> <span class="data"> 95 </span> </td>
               </tr>
               <tr>
                 <th scope="row"> Pace </th>
-                <td style="--size: calc(9 / 12); --color: rgba(170,90,240,0.75);"> </td>
+                <td style="--size: calc(9.2 / 10); --color: rgba(170,90,240,0.75);"> <span class="data"> 92 </span> </td>
               </tr>
               <tr>
                 <th scope="row"> Content </th>
-                <td style="--size: calc(9.75 / 12); --color: rgba(255,180,50,0.75);"> </td>
+                <td style="--size: calc(9.75 / 10); --color: rgba(255,180,50,0.75);"> <span class="data"> 98 </span> </td>
               </tr>
             </tbody>
           
           </table>   
-          </div>
+
+          <div class="secondary-axis"> Humor </div>
+        </div>
           <div class="col s6">
 
-            <table class="charts-css line multiple show-primary-axis" id="my-chart">
+            <table class="charts-css line multiple show-primary-axis .show-data-axes" id="my-chart">
 
               <tbody>
                 <tr>
