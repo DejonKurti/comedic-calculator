@@ -108,6 +108,7 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
@@ -117,23 +118,17 @@ footer.page-footer {
 }
 
 #my-chart {
-  padding-top: 15%;
+  padding-top: 0%;
 }
 
 #my-chart.line {
-  height: 275px;
+  height: 297px;
   max-width: 80%;
   margin: 0 auto;
 }
 
-.primary-axis {
-  text-align: center;
-  text-emphasis: 50px;
-  font-weight: bold;
-  font-size: 15px;
-}
 #bars {
-  --secondary-axes-color: rgba(0, 0, 0, 1);
+  --secondary-axes-color: #e0e0e0;
   --secondary-axes-style: solid;
   --secondary-axes-width: 1px;
   padding-right: 10%;
@@ -178,4 +173,11 @@ footer.page-footer {
   grid-area: secondary-axis;
   writing-mode: tb-rl;
   transform: rotateZ(180deg);
+  font-weight: bold;
+}
+
+.secondary-axis-2 {
+  writing-mode: tb-rl;
+  transform: rotateZ(180deg);
+  padding-top: -50px;
 }
