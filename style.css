@@ -3,6 +3,21 @@ nav .brand-logo {
   color: #444;
 }
 
+.about {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.curve {
+  transform: scale(1.27);
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+.logo {
+  transform: scale(1);
+}
+
 p {
   line-height: 2rem;
 }
