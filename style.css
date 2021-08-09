@@ -3,9 +3,12 @@ nav .brand-logo {
   color: #444;
 }
 
+.title{
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
 .about {
   font-size: 16px;
-  padding: 5px;
 }
 
 .curve {
@@ -151,8 +154,9 @@ footer.page-footer {
 
 #bars tbody td {
   transform-origin: bottom;
-  animation: revealing-bars 8s linear 1;
+  animation: revealing-bars 20s linear 1;
 }
+
 @keyframes revealing-bars {
   0%  { transform: scaleY( 0 ); }
   15% { transform: scaleY( 1 ); }
@@ -160,9 +164,9 @@ footer.page-footer {
 
 #my-chart tbody td {
   transform-origin: left;
-  animation: revealing-lines 8s linear 1;
-  
+  animation: revealing-lines 20s linear 1;
 }
+
 @keyframes revealing-lines {
   0%  { transform: scaleY( 0 ); }
   15% { transform: scaleY( 1 ); }

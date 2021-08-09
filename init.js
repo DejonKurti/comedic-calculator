@@ -18,7 +18,8 @@ Array.prototype.forEach.call(
     const result = document.querySelectorAll(".results");
     console.log(result)
     const defaultLabelText = "No file selected";
-    const defaultResultText = "No results";
+    const defaultResultText = "No Results";
+    const generation = "Generating Results"
     const newResult = "You are in the 91st percentile";
 
     // Set default text for label
@@ -34,7 +35,7 @@ Array.prototype.forEach.call(
       hiddenInput.click();
     });
 
-    hiddenInput.addEventListener("change", function() {
+    function updater_name() {
       const filenameList = Array.prototype.map.call(hiddenInput.files, function(
         file
       ) {
@@ -43,8 +44,34 @@ Array.prototype.forEach.call(
 
       label.textContent = filenameList.join(", ") || defaultLabelText;
       label.title = label.textContent;
+      result.textContent = generation;
+      document.getElementById("result").innerHTML = result.textContent;
+    }
+
+    function updater_percentile() {
+      const filenameList = Array.prototype.map.call(hiddenInput.files, function(
+        file
+      ) {
+        return file.name;
+      });
+
       result.textContent = newResult;
       document.getElementById("result").innerHTML = result.textContent;
+    }
+
+    hiddenInput.addEventListener("change", function(){
+      setTimeout(updater_name, 1000);
     });
-  }
-);
+
+    hiddenInput.addEventListener("change", function(){
+      setTimeout(updater_percentile, 7000);
+    });
+
+function reveal_chart()  {
+  document.getElementById('reveal').style.display='block';
+}
+
+document.getElementById('myButton').addEventListener("click", function(){
+  setTimeout(reveal_chart, 10000);
+  });
+})
