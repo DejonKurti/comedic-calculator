@@ -64,7 +64,7 @@ Array.prototype.forEach.call(
     });
 
     hiddenInput.addEventListener("change", function(){
-      setTimeout(updater_percentile, 7000);
+      setTimeout(updater_percentile, 12000);
     });
 
 function reveal_chart()  {
@@ -72,6 +72,6 @@ function reveal_chart()  {
 }
 
 document.getElementById('myButton').addEventListener("click", function(){
-  setTimeout(reveal_chart, 10000);
+  setTimeout(reveal_chart, 12500);
   });
 })
